@@ -38,3 +38,12 @@ personalMovieDB.movies[latestMovies1] = estimationMovies1;
 personalMovieDB.movies[latestMovies2] = estimationMovies2;
 
 console.log(personalMovieDB);
+
+
+// Условия
+const mainTitle = document.querySelector('#main-title');
+if (numberOfFilms >= 25) {
+    mainTitle.textContent = 'Вы посмотрели много фильмов!';
+} else {
+    mainTitle.textContent = 'Вы посмотрели мало фильмов!';
+}

@@ -42,8 +42,10 @@ console.log(personalMovieDB);
 
 // Условия
 const mainTitle = document.querySelector('#main-title');
-if (numberOfFilms >= 25) {
+if (numberOfFilms > 10) {
     mainTitle.textContent = 'Вы посмотрели много фильмов!';
-} else {
+} else if (numberOfFilms <= 10) {
     mainTitle.textContent = 'Вы посмотрели мало фильмов!';
+} else if (numberOfFilms == 0) {
+    mainTitle.textContent = 'Вы ничего не смотрели!';
 }
